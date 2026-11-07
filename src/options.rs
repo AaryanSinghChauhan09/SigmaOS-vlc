@@ -1,7 +1,7 @@
 //! Options model.
 
 #[derive(Debug, Clone, PartialEq)]
-pub enum Mode { Default, Play(String), Playlist(Vec<String>), Fullscreen, Volume(u8) }
+pub enum Mode { Default, Track(String, String, u64), Play(String), Pause, Next, Prev, List }
 
 #[derive(Debug, Clone)]
 pub struct Options { pub mode: Mode }
