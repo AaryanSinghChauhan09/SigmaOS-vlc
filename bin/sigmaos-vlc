@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# sigmaos-vlc — SigmaOS helper for vlc.
+set -euo pipefail
+APP="vlc"
+cmd="${1:-status}"
+case "$cmd" in
+  launch)  xdg-open "$(command -v $APP || command -v ${APP}bin || echo /usr/bin/$APP)" 2>/dev/null || echo "$APP not installed";;
+  config)  echo "config dir: $HOME/.config/VLC"; ls "$HOME/.config/VLC" 2>/dev/null | head;;
+  reset)   echo "remove $HOME/.config/VLC to reset $APP";;
+  *) echo "usage: sigmaos-vlc launch|config|reset" >&2; exit 2;;
+esac

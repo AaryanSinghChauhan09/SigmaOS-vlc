@@ -1,0 +1,8 @@
+# SigmaOS VLC defaults
+quiet=0
+fullscreen=0
+audio-language=eng
+sub-language=eng,eng
+http-user-agent=SigmaOS
+avcodec-hw=any
+vout=auto
