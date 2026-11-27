@@ -1,0 +1,8 @@
+[component]
+name = "vlc"
+version = "0.1.0"
+category = "multimedia"
+description = "SigmaOS media player integration"
+maintainer = "AaryanSinghChauhan09"
+license = "GPL-3.0-or-later"
+rolling = true
